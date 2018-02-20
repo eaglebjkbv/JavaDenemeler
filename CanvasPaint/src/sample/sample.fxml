@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="97.0" layoutY="-16.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <ColorPicker fx:id="renkSecimi" prefHeight="25.0" prefWidth="138.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ColorPicker>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Çizgi Boyutu" />
+                  <Slider fx:id="cizgiKalinligi" max="15.0" min="1.0" prefHeight="14.0" prefWidth="63.0" value="5.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <Canvas fx:id="cizimAlani" height="349.0" width="601.0">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor></Canvas>
+
+
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
