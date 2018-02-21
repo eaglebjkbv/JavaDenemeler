@@ -11,13 +11,13 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="147.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <GridPane prefHeight="145.0" prefWidth="493.0">
+            <GridPane prefHeight="131.0" prefWidth="370.0">
               <columnConstraints>
                 <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="172.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="9.0" prefWidth="28.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -26,12 +26,12 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="No" textAlignment="RIGHT" />
-                  <Label layoutX="10.0" layoutY="19.0" text="Ad" GridPane.rowIndex="1" />
-                  <Label layoutX="10.0" layoutY="52.0" text="Soyad" GridPane.rowIndex="2" />
-                  <TextField prefHeight="25.0" prefWidth="165.0" GridPane.columnIndex="1" />
-                  <TextField layoutX="77.0" layoutY="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField layoutX="77.0" layoutY="48.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="No :" textAlignment="RIGHT" />
+                  <Label layoutX="10.0" layoutY="19.0" text="Ad :" GridPane.rowIndex="1" />
+                  <Label layoutX="10.0" layoutY="52.0" text="Soyad :" GridPane.rowIndex="2" />
+                  <TextField prefHeight="25.0" prefWidth="165.0" promptText="Numaranız" GridPane.columnIndex="1" />
+                  <TextField layoutX="77.0" layoutY="15.0" promptText="Adınız" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField layoutX="77.0" layoutY="48.0" promptText="Soyadınız" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Button fx:id="btnKaydet" mnemonicParsing="false" text="Kaydet" GridPane.rowIndex="3" />
                   <Button fx:id="btnListele" mnemonicParsing="false" onAction="#setBtnListele_Click" text="Listele" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
@@ -39,23 +39,17 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
                <HBox.margin>
-                  <Insets />
+                  <Insets left="20.0" />
                </HBox.margin>
             </GridPane>
          </children>
       </HBox>
    </top>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="308.0" prefWidth="648.0" BorderPane.alignment="CENTER">
          <children>
             <Region prefHeight="20.0" prefWidth="200.0" />
-            <TableView fx:id="tblListe" prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                <TableColumn fx:id="tblSat1" prefWidth="75.0" text="Numara" />
-                <TableColumn fx:id="tblSat2" prefWidth="167.0" text="Ad" />
-                  <TableColumn fx:id="tblSat3" prefWidth="183.0" text="Soyad" />
-              </columns>
-            </TableView>
+            <TableView fx:id="tblListe" prefHeight="200.0" prefWidth="423.0" />
          </children>
       </VBox>
    </center>

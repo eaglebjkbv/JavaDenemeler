@@ -24,7 +24,7 @@ public class Controller implements Initializable{
     public void initialize(URL location, ResourceBundle resources) {
         GraphicsContext g=cizimAlani.getGraphicsContext2D();
         renkSecimi.setValue(Color.rgb(50,10,10));
-        cizimAlani.setStyle("-fx-background-color: red");
+        // cizimAlani.setStyle("-fx-background-color: red");
         cizimAlani.setOnMouseDragged(e->{
             double boyut=cizgiKalinligi.getValue();
             double posX=e.getX();

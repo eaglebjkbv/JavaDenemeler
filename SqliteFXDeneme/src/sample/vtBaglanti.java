@@ -7,19 +7,22 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class vtBaglanti {
-    public static Connection conn = null;
-    public vtBaglanti() {
+    private Connection conn ;
+
+    public Connection vtBaglan(){
 
         String url = "jdbc:sqlite:dbdeneme";
 
-    try {
-        conn = DriverManager.getConnection(url);
-        System.out.println("Veri Tabanı Bağlantısı yapıldı");
+        try {
+            conn = DriverManager.getConnection(url);
+            System.out.println("Veri Tabanı Bağlantısı yapıldı");
+            return conn;
 
 
-    } catch (SQLException e) {
-        System.out.println(e.getMessage());
-    }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return conn;
+        }
 //   finally {
 //        try {
 //            if (conn != null) {
